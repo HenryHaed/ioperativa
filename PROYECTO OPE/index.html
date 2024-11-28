@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo Dijkstra</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CAPITULO 10</h1>
+        <h3>Problema de la ruta más corta: Implementación de Dijkstra para encontrar la ruta más corta entre dos puntos en un grafo</h3>
+        <h2>Algoritmo Dijkstra</h2>
+
+        <label for="numNodes">Numeros de Nodos</label>
+        <input type="number" id="numNodes" min="2" placeholder="Inserte Numeros de Nodos">
+        <button onclick="setupGraph()">Establece los Nodos</button>
+
+        <div id="graphInput" class="hidden">
+            <h3>Introducir aristas y pesos</h3>
+            <div id="edgesContainer"></div>
+
+            <label for="startNode">Start Node:</label>
+            <input type="text" id="startNode" maxlength="1" placeholder="Ingrese el nodo de inicio (por ejemplo, A)">
+            <button onclick="runDijkstra()">Calcular el camino más corto</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <h3>Resultado de la ruta más corta</h3>
+            <p id="output"></p>
+            <h4>Camino más corto en general:</h4>
+            <p id="shortestPath"></p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
